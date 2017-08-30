@@ -15,13 +15,13 @@ namespace ConsoleApplication2
         {
             using (WebClient client = new WebClient())
             {
-                
+               
                 string url = "https://mail.ru";
                 string wrongUrl = "https://mai1.ru";
                 try { 
                // string content = client.DownloadString(url);
                 string secondContent = client.DownloadString(wrongUrl);
-               // Console.WriteLine(content);//верный
+              // Console.WriteLine(content);//верный
                 Console.WriteLine(secondContent);//не верный;
                 }
                 catch (System.Net.WebException e  )
